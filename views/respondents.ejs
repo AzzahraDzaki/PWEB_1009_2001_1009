@@ -1,0 +1,19 @@
+<div class="wrapper-respondents">
+  <h3>Respondents</h3>
+  <% respondents.forEach(respondent => { %>
+  <a href="/detail-respondent/<%= respondent.user_id %>" class="respondent">
+      <div class="left">
+        <div class="icon-user">
+          <i class="bi bi-person-circle"></i>
+        </div>
+      </div>
+      <div class="right">
+        <span class="nama"><%= respondent.username%> </span>
+        <div class="date">
+          <span> <i class="bi bi-calendar3"></i><%= moment(respondent.created_at).format('dddd, D MMMM YYYY') %></span>
+          <span> <i class="bi bi-clock"></i><%= moment(respondent.created_at).format('HH:mm') %></span>
+        </div>
+      </div>
+    </a>
+  <% }); %>
+</div>

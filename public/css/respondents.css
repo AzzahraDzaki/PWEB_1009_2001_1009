@@ -1,0 +1,68 @@
+.wrapper-respondents{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(350px, 1fr));
+  width: 70%;
+  padding:50px;
+  background:#ECE6C2;
+  border-radius: 25px;
+}
+
+.respondent{
+  width: 100%;
+  text-decoration: none;
+  /* width:300px; */
+  display:flex;
+  flex-direction:row;
+  justify-content: start;
+  align-items: center;
+  gap:20px;
+  padding:10px;
+  border-radius:4px;
+  transition:.3s;
+  border-bottom:1px solid #333;
+}
+
+.respondent:hover{
+  background:#b9b59a;
+}
+
+.wrapper-respondents .respondent .left .icon-user i{
+  font-size:70px;
+  color:#252525;
+}
+
+.wrapper-respondents .respondent .right{
+  display:flex;
+  flex-direction:column;
+}
+
+.wrapper-respondents .respondent .right span{
+  color:#252525;
+}
+
+.wrapper-respondents .respondent .right span i{
+  margin-right:10px;
+  font-size:15px;
+
+}
+
+.wrapper-respondents .respondent .right .nama{
+  font-weight: 700;
+  font-size: 20px; 
+  text-transform: capitalize;
+  margin-top:-5px;
+}
+
+.wrapper-respondents .respondent .right .date{
+  display:flex;
+  gap:20px;
+  
+}
+
+.wrapper-respondents .respondent .right .date span{
+  font-size:14px;
+  color:#696969;
+}
+.wrapper-respondents .respondent .right .date span i{
+  color:#696969;
+}

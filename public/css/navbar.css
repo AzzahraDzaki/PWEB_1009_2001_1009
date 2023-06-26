@@ -1,0 +1,84 @@
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height:120px;
+  background-color:#fff;
+}
+
+.navbar .left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:54px;
+  margin-left:60px;
+}
+
+.navbar .left .logo{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color: #D2A24C;
+}
+
+.navbar .left .nav-links{
+  display:flex;
+  gap:25px;
+}
+
+.navbar .left .nav-links a{
+  text-decoration: none;
+  color:#252525;
+  padding:7px 18px;
+  border-radius:36px;
+  transition:.2s;
+}
+
+.navbar .right a{
+  text-decoration: none;
+  color:#252525;
+  padding:7px 18px;
+  border-radius:36px;
+  background:#6F5643;
+  color:#fff;
+  transition:.2s;
+}
+
+section nav .left .logo{
+  display:grid;
+  place-content:center;
+}
+
+section nav .left .logo .logo-img{
+  width:95px;
+  height:95px;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+.navbar .left .nav-links .add-form{
+  background:#6F5643;
+  color:#fff;
+  font-weight:700;
+}
+
+.navbar .left .nav-links .add-form:hover,
+.navbar .right a:hover{
+  background:#534032;
+  color:#fff;
+}
+
+.navbar .left .nav-links a:hover{
+  background:#6F5643;
+  color:#fff;
+}
+
+.navbar .right{
+  display: flex;
+  gap:25px;
+  margin-right:60px;
+}

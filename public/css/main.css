@@ -1,0 +1,93 @@
+main{
+  width: 100%;
+  min-height:100vh;
+  padding:60px;
+  margin-top: 100px;
+  display: flex;
+  justify-content:center;
+  align-items:start;
+}
+
+main .container-main{
+  display:flex;
+  gap:15px;
+  width: 100%;
+  border-radius:30px;
+  padding:40px;
+  background:#ECE6C2;
+}
+
+.container-main .left{
+  display:flex;
+  flex-direction:column;
+  align-items: start;
+}
+
+.container-main .right{
+
+}
+
+
+
+.container-main .left .dot{
+  display:flex;
+  gap:19px;
+  margin-bottom:50px;
+}
+
+.container-main .left .caption{
+  margin-bottom:40px;
+}
+
+.container-main .left .caption h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.container-main .left .dot span{
+  width:33px;
+  height:33px;
+  border-radius:50%;
+}
+
+.container-main .left .dot span:nth-child(1){
+  background:#EB3449;
+}
+.container-main .left .dot span:nth-child(2){
+  background:#FDB202;
+}
+.container-main .left .dot span:nth-child(3){
+  background:#1DAA81;
+}
+
+.btn-main{
+  text-decoration: none;
+  color:#fff;
+  padding:15px 35px;
+  border-radius:36px;
+  background:#D2A24C;
+  transition:.2s;
+  font-weight:700;
+}
+
+.btn-main:hover{
+  background:#a8833d;
+}
+
+.container-main .right .circle{
+  width:370px;
+  height:370px;
+  border-radius:50%;
+  background-color: #fff;
+  display:grid;
+  place-content: center;
+}
+
+.main-pic{
+  width:365px;
+  height:365px;
+  border-radius:50%;
+  object-fit: cover;
+}

@@ -1,0 +1,34 @@
+
+    <div class="auth-wrapper">
+        <div class="left">
+          <div class="wrapper-pic-auth">
+            <img src="./img/main-pic.jpg">
+          </div>
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <div class="title">
+                    <h1>Hello Strangers!</h1>
+                    <p>Register your data</p>
+                </div>
+                <form action="/register" method="post">
+                    <div class="form-item">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="email">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="username" class="form-control" id="username" placeholder="username">
+                    </div>
+                    <div class="form-item">
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                    </div>
+                    <div class="form-item">
+                        <input type="password" name="confirm_password" class="form-control" id="exampleInputPassword1" placeholder="confirm password">
+                    </div>
+                    <div class="form-item form-button">
+                        <button type="submit" class="btn-submit">Create</button>
+                        <p>Have account already?<a href="/login" >Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

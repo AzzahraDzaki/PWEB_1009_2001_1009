@@ -1,0 +1,41 @@
+<div class="container-recent">
+  <div class="top">
+      <div class="profil-pic">
+        <% if (user.avatar) { %>
+          <img src="./img/<%= user.avatar %>" id="avatar-preview" >
+        <% } else { %>
+          <img src="./img/user-pic.png" id="avatar-preview" >
+        <% } %>
+      </div>
+      <div class="name-email">
+          <span class="name"><%= user.username %></span>
+          <span class="email"><%= user.email %></span>
+      </div>
+  </div>
+  <div class="custom-table">
+    <table class="table" >
+      <thead >
+        <tr>
+          <th>Date</th>
+          <th>File Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% forms.forEach(form => { %>
+        <tr >
+          <td><%= moment(form.created_at).format('LL') %></td>
+          <td>
+            <%
+            var fileName = form.uploaded_file;
+            var result = fileName.substring(fileName.indexOf('-') + 1);
+            %>
+            <%= result %>
+          </td>
+          <td>Uploaded</td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

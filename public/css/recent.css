@@ -1,0 +1,82 @@
+.container-recent{
+  display:flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius:30px;
+  padding:40px;
+  background:#ECE6C2;
+}
+
+.container-recent .top{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  margin-bottom:30px;
+}
+.container-recent .top .profil-pic{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  display:grid;
+  place-content: center;
+}
+
+.container-recent .top .profil-pic img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+.container-recent .top .name-email{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-top:10px;
+}
+
+.container-recent .top .name-email .name{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.container-recent .top .name-email .email{
+  margin-top:-8px;
+  font-size:16px;
+}
+
+.custom-table {
+  border-radius: 30px;
+  background: #6F5643;
+  overflow-y: scroll;
+  max-height: 300px; /* Ubah nilai ini sesuai kebutuhan Anda */
+  color: #fff;
+  padding:15px;
+}
+
+
+.custom-table table thead tr th,
+.custom-table table tbody tr td {
+  padding: 10px;
+  background: #6F5643;
+  color:#fff;
+  border: none;
+  text-align: center;
+  border-left: 1px solid #fff; /* Menampilkan border pada kolom */
+}
+
+.custom-table table thead tr th{
+  border: none;
+}
+
+.custom-table thead tr th:first-child,
+.custom-table tbody tr td:first-child {
+  border-left: none; /* Menghilangkan border pada kolom pertama */
+}
+
+.custom-table thead thead tr th {
+  border-bottom: 1px solid #fff; /* Menampilkan border pada baris header */
+}

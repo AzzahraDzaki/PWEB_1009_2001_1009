@@ -1,0 +1,52 @@
+.container-make-form{
+  width: 60%;
+  padding:50px;
+  background:#ECE6C2;
+  border-radius: 30px;
+  
+}
+
+.container-make-form form{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.container-make-form form .row label{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+}
+.container-make-form form .row{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-make-form form .row input{
+  border-radius:25px;
+}
+
+.container-make-form form .row .btn-account{
+  display:flex;
+  justify-content:end;
+}
+.container-make-form form .row .btn-account button{
+  width:130px;
+  height:35px;
+  border-radius:25px;
+  background:#6f5643;
+  color:#fff;
+  border:0;
+  transition:.2s;
+}
+
+.container-make-form form .row .btn-account button:hover{
+  background:#45362a;
+}
+
+

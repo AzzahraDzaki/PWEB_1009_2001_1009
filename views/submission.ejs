@@ -1,0 +1,29 @@
+
+  <div class="container-make-form">
+    <% if (isSubmitted) { %>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Haloo user!!!</strong> form ini sudah anda submit.
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+      </div>
+    <% } else { %>
+    <form class="form-upload" action="/submit" method="post" enctype="multipart/form-data">
+      <h3 class="mb-4 page-title">Upload</h3>
+      <div class="row mb-3">
+        <div class="file-drop">
+          <input type="hidden" name="form_id" value="<%= form.form_id %>">
+          <input type="file" name="uploaded_file" id="file-input" multiple>
+          <label for="file-input" class="file-label">
+            <span><i class="bi bi-cloud-arrow-up"></i></span>
+            <span>Drag & Drop Files or Browse</span>
+            <span>Supported formates: JPEG, PNG, PDF, Word, PPT</span>
+          </label>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control input" id="description" name="description" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Upload File</button>
+    </form>
+  </div>
+<% } %>

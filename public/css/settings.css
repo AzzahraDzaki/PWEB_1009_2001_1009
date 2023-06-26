@@ -1,0 +1,79 @@
+.container-settings{
+  width: 100%;
+  padding:40px;
+  display:flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap:67px;
+}
+.container-settings .left{
+  width:227px;
+  height:500px;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+  justify-content: center;
+  align-items: center;
+  background:#6F5643;
+  border-radius:25px;
+}
+
+.container-settings .left a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: 400;
+  font-size: 16px;
+  transition:.2s;
+}
+
+.container-settings .left a:hover{
+  color:#a19388;
+}
+
+.container-settings .right{
+  width:100%;
+  padding:40px;
+  background:#6F5643;
+  border-radius:25px;
+  color:#fff;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-settings .right form{
+  width:100%;
+}
+.container-settings .right form input{
+  border-radius:25px;
+}
+
+.container-settings .right form .row{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-settings .right form .row .btn-account{
+  display:flex;
+  justify-content:end;
+  margin-top:10px;
+}
+
+.container-settings .right form .row .btn-account button{
+  width:130px;
+  height:35px;
+  border-radius:25px;
+  background:#ecd8ca;
+  color:#252525;
+  border:0;
+  transition:.2s;
+}
+
+.container-settings .right form .row .btn-account button:hover{
+  background:#b09887;
+  color:#fffefd
+}

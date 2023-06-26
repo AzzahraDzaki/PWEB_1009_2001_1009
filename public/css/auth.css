@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@300;400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.auth-wrapper{
+    width:100%;
+    height:100vh;
+    display:flex;
+}
+
+.auth-wrapper .left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:40%;
+    background: #6F5643;
+}
+
+/* .auth-wrapper .left .wrapper-pic-auth{
+  width:505px;
+  height:505px;
+  border-radius:50%;
+  background-color: #252525;
+} */
+
+.auth-wrapper .left img{
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  object-fit: cover;
+  border:5px solid #D2A24C;
+}
+
+.auth-wrapper .right{
+    width:60%;
+    padding:40px 100px 30px 100px;
+    background: #fff;
+}
+
+.auth-wrapper .right .form-container{
+    width: 100%;
+    height:100%;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.title{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    margin-bottom:50px;
+}
+
+.title h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.title p{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+}
+
+form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+form .form-item{
+    display:flex;
+    flex-direction: column;
+}
+form .form-button{
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+}
+
+.btn-submit{
+    width: 135px;
+    height: 38px;
+    border:0;
+    background: #6F5643;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color:#fff;
+    transition: .2s;
+    margin-top:20px;
+    margin-bottom:28px;
+}
+
+.btn-submit:hover{
+    background: #794848;
+
+}
+
+.form-button p a{
+    text-decoration: none;
+    color:#6F5643;
+    margin-left:5px;
+}
+.form-button p a:hover{
+    color:#764646;
+}
+
+
+form .form-item input{
+    width: 280px;
+    height: 43px;
+    background: rgba(217, 217, 217, 0.01);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    opacity: 0.9;
+    padding-left: 19px;
+    outline: none;
+}
+
+input::placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  color: #747272;
+  opacity: 0.9;
+    
+}
+

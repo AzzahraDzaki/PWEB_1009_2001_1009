@@ -1,0 +1,28 @@
+
+    <div class="auth-wrapper">
+        <div class="left">
+            <div class="wrapper-pic-auth">
+              <img src="./img/main-pic.jpg">
+            </div>
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <div class="title">
+                    <h1>Log in to Studentify!</h1>
+                    <p>Welcome back! Log in with your data that you entered during registration.</p>
+                </div>
+                <form action="/login" method="post">
+                    <div class="form-item">
+                        <input type="text" name="usernameOrEmail" class="form-control" id="usernameOrEmail" placeholder="Username atau email">
+                    </div>
+                    <div class="form-item">
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-item form-button">
+                        <button type="submit" class="btn-submit">Login</button>
+                        <p>Don't have an account?<a href="/register" >Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

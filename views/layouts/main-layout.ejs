@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/account.css">
+  <link rel="stylesheet" href="../css/recent.css">
+  <link rel="stylesheet" href="../css/settings.css">
+  <link rel="stylesheet" href="../css/make-form.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/submission.css">
+  <link rel="stylesheet" href="../css/respondents.css">
+  <link rel="stylesheet" href="../css/detail-respondent.css">
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <section>
+    <nav class="navbar position-fixed top-0 left-0">
+      <div class="left">
+        <div class="logo">
+          <img class="logo-img" src="./img/logo.jpg" alt="logo">
+        </div>
+        <div class="nav-links">
+          <a href="/make-form" class="add-form"><i class="bi bi-plus-lg"></i></a>
+          <a href="/">Home</a>
+          <a href="/forms">Forms</a>
+          <a href="/recent">Recent</a>
+          <a href="/settings">Settings</a>
+        </div>
+      </div>
+      <div class="right">
+          <a href="/account">My Account</a>
+          <a href="/login"><i class="bi bi-box-arrow-right"></i></a>
+      </div>
+    </nav>
+    <main>
+      <%- body %>
+    </main>
+  </section>
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script>
+    // Mendapatkan elemen file-drop
+    const fileDrop = document.querySelector('.file-drop');
+    
+    // Mendapatkan elemen input file
+    const fileInput = fileDrop.querySelector('input[type="file"]');
+    
+    // Menambahkan event listener pada elemen file-input
+    fileInput.addEventListener('change', () => {
+      const files = fileInput.files;
+      displayFiles(files);
+    });
+    
+    // Fungsi untuk menampilkan daftar file yang dipilih
+    function displayFiles(files) {
+      const fileLabel = fileDrop.querySelector('.file-label');
+    
+      if (files.length > 0) {
+        fileLabel.textContent = files[0].name;
+      } else {
+        fileLabel.textContent = 'Click to upload';
+      }
+    }
+    
+    
+    </script>
+    <!-- drag and drop -->
+<script>
+  function allowDrop(event) {
+    event.preventDefault();
+  }
+
+  function dragSignature(event) {
+    event.dataTransfer.setData("text/plain", event.target.id);
+  }
+
+  function dropSignature(event) {
+    event.preventDefault();
+    const signatureId = event.dataTransfer.getData("text/plain");
+    const signatureElement = document.getElementById(signatureId);
+    const signatureContainer = event.target;
+    signatureContainer.appendChild(signatureElement);
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Mulish:wght@300;400;500;600;700&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+
+body{
+  width: 100%;
+  min-height:100vh;
+}
+
+.back{
+  text-decoration:none;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:4px;
+  background-color: #6F5643;
+  position:absolute;
+}

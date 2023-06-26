@@ -1,0 +1,30 @@
+
+
+<div class="wrapper-postingan">
+  <% forms.forEach(form => { %>
+  <div class="postingan">
+      <div class="left">
+        <div class="pic-uploader">
+          <% if (form.avatar) { %>
+            <img src="./img/<%= form.avatar %>">
+          <% } else { %>
+            <img src="./img/user-pic.png" >
+          <% } %>
+        </div>
+      </div>
+      <div class="right">
+        <div class="data-form">
+          <a href="/submission/<%= form.form_id %>" class="title"><%= form.title %></a>
+          <span class="deskripsi"><%= form.description %></span>
+          <span class="nama"><i class="bi bi-person"></i><%= form.username %> </span>
+          <span class="date"> <i class="bi bi-calendar3"></i><%= moment(form.created_at).format('LL') %></span>
+        </div>
+        <div class="resp-length">
+          <span>Respondents</span>
+          <span><i class="bi bi-people"></i></span>
+          <a href="/respondents/<%= form.form_id %>" class="arrow-resp"><i class="bi bi-chevron-double-right"></i></a>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+</div>

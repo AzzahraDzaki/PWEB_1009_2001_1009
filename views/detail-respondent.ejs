@@ -1,0 +1,30 @@
+<div class="container-detail-respondent">
+  <a class="back back-detail-resp" href="/forms">&laquo;Back</a>
+  <div class="top">
+      <div class="profil-pic">
+        <i class="bi bi-person-circle"></i>
+      </div>
+      <div class="user-date">
+          <span class="username"><%= respondent.username %></span>
+          <span class="date"> <i class="bi bi-calendar3"></i><%= moment(respondent.created_at).format('dddd, D MMMM YYYY') %></span>
+          <span> <i class="bi bi-clock"></i><%= moment(respondent.created_at).format('HH:mm') %></span>
+      </div>
+  </div>
+  <div class="middle">
+     <div class="file">
+        <div>
+          <i class="bi bi-file-earmark-text"></i>
+          <a href="/download/<%= respondent.user_id %>/<%= respondent.form_id %>">
+            <%
+            var fileName = respondent.uploaded_file;
+            var result = fileName.substring(fileName.indexOf('-') + 1);
+            %>
+            <%= result %>
+          </a>
+        </div>
+     </div> 
+     <div class="comment">
+      <textarea placeholder="Comment (0)" class="form-control input" id="description" name="description" rows="3" ></textarea>
+     </div> 
+  </div>
+</div>

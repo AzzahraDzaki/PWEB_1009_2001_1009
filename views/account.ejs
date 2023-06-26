@@ -1,0 +1,55 @@
+<div class="container-account">
+    <div class="top">
+        <div class="profil-pic">
+          <% if (user.avatar) { %>
+            <img src="./img/<%= user.avatar %>" id="avatar-preview" >
+          <% } else { %>
+            <img src="./img/user-pic.png" id="avatar-preview" >
+          <% } %>
+        </div>
+        <div class="name-email">
+            <span class="name"><%= user.username %></span>
+            <span class="email"><%= user.email %></span>
+        </div>
+    </div>
+    <div class="middle">
+        <form action="/edit-account" method="post" enctype="multipart/form-data">
+          <div class="row mb-3">
+            <label for="username" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-6">
+              <input name="username" type="text" class="form-control" id="username" value="<%= user.username %>">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="noHp" class="col-sm-2 col-form-label">Mobile Number</label>
+            <div class="col-sm-6">
+              <input name="noHp" type="text" class="form-control" id="noHp" value="<%= user.noHp %>">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-6">
+              <input name="email" type="email" class="form-control" id="inputEmail3"value="<%= user.email %>">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="avatar" class="col-sm-2 col-form-label">Avatar</label>
+            <div class="col-sm-6">
+              <input class="form-control" type="file" name="avatar" accept="image/*" id="formFile">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              
+            </div>
+            <div class="col-sm-6 btn-account">
+              <button type="submit" class="btn-save">Save</button>
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="bottom">
+        <span><i class="bi bi-patch-check"></i></span>
+        <span>Last synced 3 mins ago</span>
+    </div>
+</div>

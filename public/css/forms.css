@@ -1,0 +1,103 @@
+.wrapper-postingan{
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(1, minmax(350px, 1fr));
+  width: 70%;
+  padding:50px;
+  background:#ECE6C2;
+  border-radius: 25px;
+}
+
+.postingan{
+  position:relative;
+  width: 100%;
+  /* width:300px; */
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  padding:25px;
+  border-radius:4px;
+  transition:.3s
+}
+
+.wrapper-postingan .postingan .left .pic-uploader{
+  width:100px;
+  height:100px;
+}
+.wrapper-postingan .postingan .left .pic-uploader img{
+  width:100%;
+  height:100%;
+  border-radius:4px;
+}
+
+.wrapper-postingan .postingan .right .data-form{
+  color:#252525;
+  display:flex;
+  flex-direction:column;
+}
+.wrapper-postingan .postingan .right .data-form span{
+  color:#252525;
+}
+
+.wrapper-postingan .postingan .right .data-form span i{
+  margin-right:10px;
+  font-size:15px;
+
+}
+
+.wrapper-postingan .postingan .right .data-form .title{
+  font-weight: 700;
+  font-size: 20px; 
+  text-transform: capitalize;
+  margin-top:-5px;
+  text-decoration: none;
+  color:#252525;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.wrapper-postingan .postingan .right .data-form .title:hover{
+  color:#5e5e5e;
+}
+
+.wrapper-postingan .postingan .right .data-form .deskripsi{
+  width:40%;
+  color:#464646;
+  margin-bottom:15px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrapper-postingan .postingan .right .data-form .nama,
+.wrapper-postingan .postingan .right .data-form .date{
+  font-size:13px;
+  color:#7c7c7c;
+}
+
+.wrapper-postingan .postingan .right .resp-length{
+  position:absolute;
+  bottom:20px;
+  right:20px;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  gap:15px;
+}
+.wrapper-postingan .postingan .right .resp-length span{
+  font-size: 24px;
+}
+.wrapper-postingan .postingan .right .resp-length span:nth-child(1){
+  font-size: 14px;
+  color:#6F5643;
+}
+.wrapper-postingan .postingan .right .resp-length .arrow-resp{
+  padding:5px 10px;
+  border-radius:50%;
+  background-color: #6F5643;
+  color:#fff;
+  transition:.2s;
+}
+.wrapper-postingan .postingan .right .resp-length .arrow-resp:hover{
+  background-color: #433429;
+}
